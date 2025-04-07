@@ -10,6 +10,9 @@ import Footer from "@/components/Footer";
 import ParticleBackground from "@/components/ParticleBackground";
 import { useToast } from "@/components/ui/use-toast";
 
+// Using the API key as a constant (for a production app, this should be in an environment variable)
+const GEMINI_API_KEY = "AIzaSyDDwF40RLWr4yPtJEMQG5rvARBYSALwV3A";
+
 const Index = () => {
   const [scrollY, setScrollY] = useState(0);
   const { toast } = useToast();
@@ -43,7 +46,7 @@ const Index = () => {
         <Navbar scrollY={scrollY} />
         <Hero />
         <Features />
-        <AIDemo apiKey="AIzaSyDDwF40RLWr4yPtJEMQG5rvARBYSALwV3A" />
+        <AIDemo apiKey={GEMINI_API_KEY} />
         <Testimonials />
         <Pricing />
         <Footer />

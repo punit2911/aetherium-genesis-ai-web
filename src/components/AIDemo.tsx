@@ -54,7 +54,8 @@ const AIDemo = ({ apiKey }: AIDemoProps) => {
   
   const fetchGeminiResponse = async (userPrompt: string) => {
     try {
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`, {
+      // Updated URL to use the correct API version and model
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-1.0-pro:generateContent?key=${apiKey}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
