@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
+import { Mail, Phone, Github, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -59,6 +60,43 @@ const Footer = () => {
           </div>
         </div>
         
+        {/* Contact information section */}
+        <div className="cosmic-card rounded-xl p-8 mb-16">
+          <h3 className="text-2xl font-bold mb-6 text-white">
+            Contact <span className="text-gradient">Punit Gavali</span>
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <Mail className="h-6 w-6 text-cosmic-cyan" />
+                <a href="mailto:punitgavali29@gmail.com" className="text-gray-300 hover:text-cosmic-cyan transition-colors">
+                  punitgavali29@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone className="h-6 w-6 text-cosmic-cyan" />
+                <a href="tel:+919096950392" className="text-gray-300 hover:text-cosmic-cyan transition-colors">
+                  +91 9096950392
+                </a>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <Github className="h-6 w-6 text-cosmic-cyan" />
+                <a href="https://github.com/punit2911" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cosmic-cyan transition-colors">
+                  github.com/punit2911
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Linkedin className="h-6 w-6 text-cosmic-cyan" />
+                <a href="https://www.linkedin.com/in/punit-gavali-406b41ba/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cosmic-cyan transition-colors">
+                  linkedin.com/in/punit-gavali-406b41ba
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-6">
@@ -104,29 +142,32 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Products</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">NLP Engine</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Predictive Analytics</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Developer API</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Business Intelligence</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Custom Solutions</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Advanced NLP Engine</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Neural Predictive Analytics</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Enterprise Developer API</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Quantum Business Intelligence</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Custom AI Solutions</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Multimodal AI Systems</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Resources</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Documentation</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">API Reference</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Blog</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Case Studies</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Community</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Advanced Documentation</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">API Reference & Tutorials</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">AI Research Blog</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Enterprise Case Studies</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Developer Community</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">AI Ethics Guidelines</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Company</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">About Us</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">About Aetherium</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Innovation Lab</a></li>
               <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Careers</a></li>
               <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Contact</a></li>
               <li><a href="#" className="text-gray-400 hover:text-cosmic-cyan transition-colors">Privacy Policy</a></li>
@@ -137,7 +178,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 pt-8">
           <p className="text-center text-gray-500">
-            © {new Date().getFullYear()} Aetherium AI. All rights reserved.
+            © {new Date().getFullYear()} Aetherium AI. All rights reserved. Founded by Punit Gavali.
           </p>
         </div>
       </div>
