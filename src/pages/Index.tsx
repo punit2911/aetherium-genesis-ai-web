@@ -43,7 +43,7 @@ const Index = () => {
         <Navbar scrollY={scrollY} />
         <Hero />
         <Features />
-        <AIDemo apiKey="" />
+        <AIDemo apiKey="AIzaSyDDwF40RLWr4yPtJEMQG5rvARBYSALwV3A" />
         <Testimonials />
         <Pricing />
         <Footer />
