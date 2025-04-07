@@ -5,20 +5,20 @@ import { motion, useInView, useAnimation } from "framer-motion";
 const testimonials = [
   {
     content: "Aetherium's AI platform transformed our customer service operations. We've seen a 40% reduction in response time and a significant improvement in customer satisfaction scores.",
-    author: "Sarah Johnson",
-    position: "CTO, TechSolutions Inc.",
+    author: "Punit Gavali",
+    position: "Founder, Aetherium",
     image: "/placeholder.svg"
   },
   {
     content: "Implementing Aetherium's predictive analytics has given us insights we never thought possible. It's like having a crystal ball for business decisions.",
-    author: "Michael Chen",
-    position: "Data Director, FutureCorp",
+    author: "Punit Gavali",
+    position: "Founder, Aetherium",
     image: "/placeholder.svg"
   },
   {
     content: "The flexibility and power of Aetherium's API allowed us to create custom AI solutions that perfectly fit our unique business needs.",
-    author: "Jessica Rivera",
-    position: "Lead Developer, InnovateTech",
+    author: "Punit Gavali",
+    position: "Founder, Aetherium",
     image: "/placeholder.svg"
   }
 ];
