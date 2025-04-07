@@ -39,7 +39,7 @@ const features = [
 const Features = () => {
   const controls = useAnimation();
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.1 });
+  const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
     if (isInView) {
